@@ -1,0 +1,198 @@
+/* login */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'poppins','sans-serif';
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../src/assets/background3.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255,.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0, 0 , 10px rgba(0, 0, 0, .2);
+  /* color: white; */
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255,.2);
+  border-radius: 40px;
+  font-size: 20px;
+  /* color: white; */
+  padding: 20px 45px 20px 20px;
+}
+/* .input-box input::placeholder{
+  color: white;
+} */
+.input-box .icon{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 16px;
+}
+.wrapper .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  /* margin-bottom: 2px; */
+  
+}
+.remember-forgot label input{
+  /* accent-color: #ffff; */
+  margin-right: 4px;
+}
+.remember-forgot a {
+  /* color: #ffff; */
+  text-decoration: none;
+}
+.remember-forgot a:hover{
+text-decoration: underline;
+}
+.wrapper button{
+  width: 100%;
+  height: 45px;
+  /* background: #ffff; */
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+.wrapper .signup-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.signup-link p a{
+  /* color:#ffff; */
+  text-decoration: none;
+  font-weight: 600;
+}
+.signup-link p a:hover{
+  text-decoration: underline;
+}
+/* ****** */
+root {
+  --nav-color: #3a3939;
+  --nav-hover-color: #e84545;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #3a3939;
+  --nav-dropdown-hover-color: #e84545;
+}
+:root {
+  --background-color: #ffffff;
+  --default-color: #212529;
+  --heading-color: #32353a;
+  --accent-color: #e84545;
+  --contrast-color: #ffffff;
+}
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+   "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+   "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+:root {
+  --swiper-navigation-size: 44px;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+:root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm: 576px;
+  --bs-breakpoint-md: 768px;
+  --bs-breakpoint-lg: 992px;
+  --bs-breakpoint-xl: 1200px;
+  --bs-breakpoint-xxl: 1400px;
+}
+/* ****** */
+/* Home */
+/* body */
+@media screen and (max-width:768px) {
+  /* transition-delay : 0; */
+  
+}
+body{
+color: var(--default-color);
+background-color: var(--background-color);
+font-family: var(--default-font);
+margin: 0;
+font-size: var(--bs-body-font-size);
+font-weight: var(--bs-body-font-weight);
+line-height: var(--bs-body-font-height);
+}
+*{
+  box-sizing: border-box;
+}
+.index-page .header{
+  background-color: rgba(255,255,255,0);
+  --heading-color:#ffffff;
+  --nav-color:rgba(255,255,255,0.5)
+  --nav-hover-color:#ffffff;
+
+
+}
+.header{
+color: var(--default-color);
+background-color: var(--background-color);
+padding: 20px 0;
+transition: all 0.5s;
+z-index: 997;
+}
+.align-iteams-center{
+align-items: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.position-relative{
+position: relative;
+}
+.header.logo{
+  line-height: 1;
+}
+.me-auto{
+  margin-right: auto;
+}
+.header.logo h1{
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
