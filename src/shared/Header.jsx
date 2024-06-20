@@ -1,8 +1,9 @@
 import React from "react";
+ 
 import { NavLink } from "react-router-dom";
 export const Header = () =>{
     return(
-        <NavLink className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+        <header className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
         <div className="container">
           <a className="navbar-brand logo" to="#">
             ★Clͥasͣsͫic Culture★
@@ -42,6 +43,6 @@ export const Header = () =>{
             <button className="btn btn-primary ms-lg-3">Join Us</button>
           </div>
         </div>
-      </NavLink>
+      </header>
     )
 }
