@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faServicestack } from "@fortawesome/free-solid-svg-icons"
 export const Home = () => {
     return <>
         <section id="service">
@@ -18,7 +19,7 @@ export const Home = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="Services card-effect">
                             <div className="iconbox">
-                                <i className='bx bxs-comment-detail'></i>
+                            <FontAwesomeIcon icon="fa-brands fa-servicestack" />
                             </div>
                             <h5 className="mt-4={value.toString()} mb-2">Services</h5>
                             <p>Boutique is a place where the collection of designers is displayed or it is the place where the

@@ -5,8 +5,12 @@ import { NavLink } from "react-router-dom"
 import { useFormik } from "formik"
 import { loginschema } from "../components/index";
 //  import {background3} from "../../public/images/background3.jpg"
-
-
+// import {background3} from '../assets/background3.jpg'
+// var sectionStyle ={
+//     width : "100%",
+//     height:"400px",
+//     backgroundImage:"url("+{background3}+")"
+// }
 export const Login = () => {
     const initialValues = {
         email: "",
@@ -20,7 +24,7 @@ export const Login = () => {
 })
     return (
         <div className='wrapper'>
-            {/* <img src ={background3} alt=""/> */}
+            {/* <img src ={background} /> */}
             {/* <img src="{ require('./images/background3.jpg")} */}
             <form onSubmit={handleSubmit}action="">
                 <h1>Login</h1>
