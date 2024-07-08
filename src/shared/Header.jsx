@@ -1,10 +1,11 @@
 import React from "react";
+
 //  import Navbar from "Navbar"
 import { NavLink } from "react-router-dom";
 export const Header = () =>{
     return(
         <navbar className="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
-        <div className="container">
+        <div className="container-fluid">
           <a className="navbar-brand logo" to="#">
             ★Clͥasͣsͫic Culture★
           </a>
@@ -18,7 +19,7 @@ export const Header = () =>{
                 <a className="nav-link active" aria-current="page" to="/home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" to="/service">Services</a>
+                <NavLink className="nav-link" to="#service">Services</NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" to="/features">Features</a>
@@ -40,7 +41,9 @@ export const Header = () =>{
               </li>
     
             </ul>
-            <button className="btn btn-primary ms-lg-3">Join Us</button>
+            <NavLink to={"/Login"}>
+            <button type="submit" className="btn btn-primary ms-lg-3">Login</button>
+            </NavLink>
           </div>
         </div>
       </navbar>

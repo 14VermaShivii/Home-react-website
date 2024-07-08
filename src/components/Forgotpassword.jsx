@@ -1,29 +1,56 @@
 import React from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {faUser } from "@fortawesome/free-solid-svg-icons"
+import { useFormik } from "formik";
 import { NavLink } from "react-router-dom"
+import { forgotpasswordschema } from "../components/index"
+
 
 export const Forgotpassword = () => {
+
+    const initialValues = {
+        password: "",
+       conformpassword: ""
+    };
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+
+    useFormik({
+        initialValues: initialValues,
+        validationSchema: forgotpasswordschema ,
+})
     return (
         <div className='wrapper'>
-            <form action="">
+             <form onSubmit={handleSubmit}action="">
+            
                 <h1>Forgotpassword</h1>
                 <div className="input-box">
                     <input type="password"
-                        placeholder="password" required
-
+                    id="password"
+                     placeholder="password"
+                     autoComplete="off"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
                     />
-
                     {/* <FontAwesomeIcon icon={faUser} /> */}
-
                 </div>
+                {errors.password && touched.password ? (
+                        <p className="form-error">{errors.password}</p>
+                    ) : null}
+
                 <div className="input-box">
 
                     <input type="Password"
-                        placeholder="Confirm Password" required
+                    id="password"
+                     placeholder="Confirm Password"
+                     autoComplete="off"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
                     />
                     {/* <FontAwesomeIcon icon={faLock} /> */}
                 </div>
+                {errors.password && touched.password ? (
+                        <p className="form-error">{errors.password}</p>
+                    ) : null}
                 {/* <div className="remember-forgot">
                     <label><input type="checkbox" />Remember me</label>
                     <a href="#">Forgot Password ?</a>

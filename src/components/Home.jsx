@@ -1,9 +1,35 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Header } from "../shared/Header";
+import { Footer } from "../shared/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAws, faFacebook, faStaylinked, faServicestack, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons"
+import { faFeatherPointed, faFaceGrinStars } from "@fortawesome/free-solid-svg-icons"
+
 // import { faServicestack } from "@fortawesome/free-solid-svg-icons"
 export const Home = () => {
+
     return <>
+        <Header />
+        <div className="container-fluid px-0 hero">
+            <div className="hero vh-100 d-flex align-items-center" id="home">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 mx-auto text-center">
+                            <h1 className="display-4 text-white my-3"><b>Embrace your uniqueness<br /> and rock your individuality</b></h1>
+                            <p className="text-white">Dressing up, feeling fabulous<br />
+                                Shop your outfit style. Keep calm and try our outfit. Outfits that never goes out of fashion.<br />
+                                We got the best that you can wear a dress</p>
+                            <a to="#" class="btn me-2 btn-primary">Get Started</a>
+                            <a to="#" class="btn btn-outline-light">My Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <section id="service">
             <div className="container">
                 <div className="row mb-5">
@@ -19,7 +45,7 @@ export const Home = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="Services card-effect">
                             <div className="iconbox">
-                            <FontAwesomeIcon icon="fa-brands fa-servicestack" />
+                                <FontAwesomeIcon icon={faAws} />
                             </div>
                             <h5 className="mt-4={value.toString()} mb-2">Services</h5>
                             <p>Boutique is a place where the collection of designers is displayed or it is the place where the
@@ -30,7 +56,7 @@ export const Home = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="Services card-effect">
                             <div className="iconbox">
-                                <i className='bx bxs-comment-detail'></i>
+                                <FontAwesomeIcon icon={faServicestack} />
                             </div>
                             <h5 className="mt-4={value.toString()} mb-2">Manufacture</h5>
                             <p>A boutique means a small agency that provides a limited range of (usually) very specialized goods or
@@ -41,7 +67,7 @@ export const Home = () => {
                     <div className="col-lg-4 col-sm-6">
                         <div className="Services card-effect">
                             <div className="iconbox">
-                                <i className='bx bxs-comment-detail'></i>
+                                <FontAwesomeIcon icon={faEnvelopeOpen} />
                             </div>
                             <h5 className="mt-4={value.toString()} mb-2">Offers</h5>
                             <p> They are typically smaller, independently owned businesses with a specialized selection of fashionable
@@ -69,7 +95,7 @@ export const Home = () => {
 
                             <div className="feature d-flex mt-5">
                                 <div className="iconbox me-3">
-                                    <i className='bx bxs-comment-detail'></i>
+                                    <FontAwesomeIcon icon={faFeatherPointed} />
                                 </div>
                                 <div>
                                     <h5>Features</h5>
@@ -78,7 +104,7 @@ export const Home = () => {
                             </div>
                             <div className="feature d-flex ">
                                 <div className="iconbox me-3">
-                                    <i className='bx bxs-comment-detail'></i>
+                                    <FontAwesomeIcon icon={faStaylinked} />
                                 </div>
                                 <div>
                                     <h5>Stylish</h5>
@@ -87,7 +113,7 @@ export const Home = () => {
                             </div>
                             <div className="feature d-flex">
                                 <div className="iconbox me-3">
-                                    <i className='bx bxs-comment-detail'></i>
+                                    <FontAwesomeIcon icon={faFaceGrinStars} />
                                 </div>
                                 <div>
                                     <h5>Quality</h5>
@@ -291,9 +317,9 @@ export const Home = () => {
                             <h5 className="mb-0 mt-4={value.toString()}">shivii</h5>
                             <p>Fashion Designer</p>
                             <div className="social-icons">
-                                <a to="#"><i className='bx bxl-facebook'></i></a>
-                                <a to="#"><i className='bx bxl-twitter'></i></a>
-                                <a to="#"><i className='bx bxl-instagram-alt'></i></a>
+                                <a to="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faInstagram} /></a>
 
                             </div>
                         </div>
@@ -305,9 +331,9 @@ export const Home = () => {
                             <h5 className="mb-0 mt-4={value.toString()}">Sourabh</h5>
                             <p>lehnga designer</p>
                             <div className="social-icons">
-                                <a to="#"><i className='bx bxl-facebook'></i></a>
-                                <a to="#"><i className='bx bxl-twitter'></i></a>
-                                <a to="#"><i className='bx bxl-instagram-alt'></i></a>
+                                <a to="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faInstagram} /></a>
 
                             </div>
                         </div>
@@ -318,9 +344,9 @@ export const Home = () => {
                             <h5 className="mb-0 mt-4={value.toString()}">shivani</h5>
                             <p>Fashion Designer</p>
                             <div className="social-icons">
-                                <a to="#"><i className='bx bxl-facebook'></i></a>
-                                <a to="#"><i className='bx bxl-twitter'></i></a>
-                                <a to="#"><i className='bx bxl-instagram-alt'></i></a>
+                                <a to="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faInstagram} /></a>
 
                             </div>
                         </div>
@@ -332,10 +358,9 @@ export const Home = () => {
                             <h5 className="mb-0 mt-4={value.toString()}">Shubham</h5>
                             <p>Manager</p>
                             <div className="social-icons">
-                                <a to="#"><i className='bx bxl-facebook'></i></a>
-                                <a to="#"><i className='bx bxl-twitter'></i></a>
-                                <a to="#"><i className='bx bxl-instagram-alt'></i></a>
-
+                                <a to="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faInstagram} /></a>
                             </div>
                         </div>
                     </div>
@@ -384,48 +409,49 @@ export const Home = () => {
                                 src="https://img.freepik.com/free-photo/stylish-young-woman-sitting-restaurant-holding-newspaper-making-gesture_23-2147974676.jpg?t=st=1718780663~exp=1718784263~hmac=362a3e76e608d6844570b33f0c3309ac11f4f859dc0711bb9b36e6587914f0cf&w=360 "
                                 alt="" />
                             <h5 className=" mt-4={value.toString()}"><a to="#">TimeVallée launches its first-ever digital boutique in India </a></h5>
-                        <p>“When I shop for women, I think of different body types and ages. I curate the collection on who comes
-                            into the store,” Tally explains. Specifically, “we include some of the trendy pieces that come and go.
-                            There are also classNameic, timeless pieces that never got out of style.”</p>
+                            <p>“When I shop for women, I think of different body types and ages. I curate the collection on who comes
+                                into the store,” Tally explains. Specifically, “we include some of the trendy pieces that come and go.
+                                There are also classNameic, timeless pieces that never got out of style.”</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-
-    </section >
-        {/* <!-- <******************************> --> */ }
-    {/* <!-- <*******contact*******> --> */ }
-    <section id="contact" className="bg-light">
-        <div className="container">
-            <div className="row mb-5">
-                <div className="col-md-8 mx-auto text-center">
-                    <h6 className="text-primary">CONTACT</h6>
-                    <h1>Get In Touch</h1>
-                    <p>You can fool all of the people some of the time, and some of the people all of the time, but you can't fool
-                        all of the people all of the time.</p>
+        </section >
+        {/* <!-- <******************************> --> */}
+        {/* <!-- <*******contact*******> --> */}
+        <section id="contact" className="bg-light">
+            <div className="container">
+                <div className="row mb-5">
+                    <div className="col-md-8 mx-auto text-center">
+                        <h6 className="text-primary">CONTACT</h6>
+                        <h1>Get In Touch</h1>
+                        <p>You can fool all of the people some of the time, and some of the people all of the time, but you can't fool
+                            all of the people all of the time.</p>
+                    </div>
                 </div>
+                <form action="" className="row g-3 justify-contend-center">
+                    <div className="col-md-5">
+                        <input type="text" className="form-control" placeholder="Full name" />
+                    </div>
+                    <div className="col-md-5">
+                        <input type="text" className="form-control" placeholder="E-mail" />
+                    </div>
+                    <div className="col-md-10">
+                        <input type="text" className="form-control" placeholder="Enter Subject" />
+                    </div>
+                    <div className="col-md-10">
+                        <textarea name="" id="" cols="30" rows="5" className="form-control" placeholder="Enter Message"></textarea>
+                    </div>
+                    <div className="col-md-10 d-grid">
+                        <button type="submit" className="btn btn-primary"> Contact Us</button>
+                    </div>
+                </form>
+
             </div>
-            <form action="" className="row g-3 justify-contend-center">
-                <div className="col-md-5">
-                    <input type="text" className="form-control" placeholder="Full name" />
-                </div>
-                <div className="col-md-5">
-                    <input type="text" className="form-control" placeholder="E-mail" />
-                </div>
-                <div className="col-md-10">
-                    <input type="text" className="form-control" placeholder="Enter Subject" />
-                </div>
-                <div className="col-md-10">
-                    <textarea name="" id="" cols="30" rows="5" className="form-control" placeholder="Enter Message"></textarea>
-                </div>
-                <div className="col-md-10 d-grid">
-                    <button className="btn btn-primary"> Contact Us</button>
-                </div>
-            </form>
 
-        </div>
-
-    </section>   
+        </section>
+        <Footer />
     </>
 }

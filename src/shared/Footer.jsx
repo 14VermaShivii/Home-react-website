@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons"
 export const Footer = () => {
     return (
         <footer>
@@ -12,7 +14,7 @@ export const Footer = () => {
                         </div>
                         <div className="col-md-2">
                             <h5 className="text-white">Brand</h5>
-                            <ul className="list-unstyled">
+                            <ul className="list-unstyled text-white">
                                 <li><a to="#">About</a> </li>
                                     <li><a to="#">Services</a></li>
                                     <li><a to="#">Features</a></li>
@@ -22,7 +24,7 @@ export const Footer = () => {
                         </div>
                         <div className="col-md-2">
                             <h5 className="text-white">Brand</h5>
-                            <ul className="list-unstyled">
+                            <ul className="list-unstyled text-white">
                                 <li><a to="#">More</a> </li>
                                     <li><a to="#">Services</a></li>
                                     <li><a to="#">Features</a></li>
@@ -33,7 +35,7 @@ export const Footer = () => {
                         </div>
                         <div className="col-md-4">
                             <h5 className="text-white">Brand</h5>
-                            <ul>
+                            <ul className="text-white">
                                 <li><a to="#">Pages</a>  </li>
                                     <li><a to="#">Services</a></li>
                                     <li><a to="#">Features</a></li>
@@ -54,9 +56,9 @@ export const Footer = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="social-icons">
-                                <a to="#"><i className='bx bxl-facebook'></i></a>
-                                <a to="#"><i className='bx bxl-twitter'></i></a>
-                                <a to="#"><i className='bx bxl-instagram-alt'></i></a>
+                            <a to="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faTwitter} /></a>
+                                <a to="#"><FontAwesomeIcon icon={faInstagram} /></a>
 
                             </div>
                         </div>
