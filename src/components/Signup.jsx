@@ -18,6 +18,7 @@ export const Signup = () => {
         validationSchema: signupschema,
 })
     return (
+        <div className="container-fluid image">
         <div className='wrapper'>
            <form onSubmit={handleSubmit}action="">
                 <h1>signUp</h1>
@@ -84,6 +85,7 @@ export const Signup = () => {
                     <p>Don't have a account ?<NavLink to="/Login">Login</NavLink></p>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

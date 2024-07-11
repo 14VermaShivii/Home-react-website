@@ -19,6 +19,7 @@ export const Forgotpassword = () => {
         validationSchema: forgotpasswordschema ,
 })
     return (
+        <div className="container-fluid image">
         <div className='wrapper'>
              <form onSubmit={handleSubmit}action="">
             
@@ -60,6 +61,7 @@ export const Forgotpassword = () => {
                     <p>Don't have a account ?<NavLink to="/Login">Login</NavLink></p>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

@@ -12,7 +12,7 @@ import { loginschema } from "../components/index";
 //     height:"400px",
 //     backgroundImage:"url("+{background3}+")"
 // }
-
+import background3 from "../../public/images/background3.jpg"
 export const Login = () => {
     const initialValues = {
         email: "",
@@ -24,11 +24,19 @@ export const Login = () => {
             initialValues: initialValues,
             validationSchema: loginschema,
         })
+        
     return (
-        // <div className=" container-fluid image">
-            <div className="container-fluid image ">
-                <div className='wrapper '>
-                    {/* <img src ={background3} /> */}
+        <div className=" container  ">
+            {/* <img src ={background3} width={600} height={600} no-repeat/> */}
+          <div style={{backgroundImage:`url(${background3})`,
+          
+        }}> 
+          
+            <div className="container-fluid">
+                {/* <div className="image"> */}
+              {/* </div> */}
+                <div className='wrapper'>
+                    
                     {/* <img src="{ require('./images/background3.jpg")} */}
                     <form onSubmit={handleSubmit} action="">
                         <h1>Login</h1>
@@ -74,6 +82,7 @@ export const Login = () => {
                     </form>
                 </div>
             </div>
-        // </div>
+         </div>
+          </div>
     )
 }

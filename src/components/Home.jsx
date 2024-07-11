@@ -234,14 +234,14 @@ export const Home = () => {
                     <div className="col-lg-3 col-sm-6 text-center">
                         <div className="pricing card-effect">
                             <h6>STARTER</h6>
-                            <h1>$99</h1>
+                            <h1>$500</h1>
                             <hr />
                             <ul className="list-unstyled mb-4">
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
+                                <li><i className='bx bxs-check-circle'></i> <b>Silk Sarees</b> </li>
+                                <li><i className='bx bxs-check-circle'></i> Kanchipuram Silk </li>
+                                <li><i className='bx bxs-check-circle'></i> Banaras Silk</li>
+                                <li><i className='bx bxs-check-circle'></i> Jamdani </li>
+                                <li><i className='bx bxs-check-circle'></i> Patan Patola </li>
                             </ul>
                             <button className="btn btn-primary">Get Started</button>
                         </div>
@@ -249,14 +249,14 @@ export const Home = () => {
                     <div className="col-lg-3 col-sm-6 text-center">
                         <div className="pricing card-effect">
                             <h6>STARTER</h6>
-                            <h1>$99</h1>
+                            <h1>$1000</h1>
                             <hr />
                             <ul className="list-unstyled mb-4">
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
+                                <li><i className='bx bxs-check-circle'></i><b>Sarees</b> </li>
+                                <li><i className='bx bxs-check-circle'></i> Banarasi </li>
+                                <li><i className='bx bxs-check-circle'></i> Kanjeevaram </li>
+                                <li><i className='bx bxs-check-circle'></i> Chanderi </li>
+                                <li><i className='bx bxs-check-circle'></i> Bandhani</li>
                             </ul>
                             <button className="btn btn-primary">Get Started</button>
                         </div>
@@ -264,29 +264,30 @@ export const Home = () => {
                     <div className="col-lg-3 col-sm-6 text-center">
                         <div className="pricing card-effect">
                             <h6>STARTER</h6>
-                            <h1>$99</h1>
+                            <h1>$5000</h1>
                             <hr />
                             <ul className="list-unstyled mb-4">
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
+                                <li><i className='bx bxs-check-circle'></i><b>Lengha</b> </li>
+                                <li><i className='bx bxs-check-circle'></i> Bridal </li>
+                                <li><i className='bx bxs-check-circle'></i> Sider </li>
+                                <li><i className='bx bxs-check-circle'></i> Red Gulmoher </li>
+                                <li><i className='bx bxs-check-circle'></i> Ruffled </li>
                             </ul>
                             <button className="btn btn-primary">Get Started</button>
                         </div>
                     </div>
+                   
                     <div className="col-lg-3 col-sm-6 text-center">
                         <div className="pricing card-effect">
                             <h6>STARTER</h6>
-                            <h1>$99</h1>
+                            <h1>$2000</h1>
                             <hr />
                             <ul className="list-unstyled mb-4">
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
-                                <li><i className='bx bxs-check-circle'></i> Premium support </li>
+                                <li><i className='bx bxs-check-circle'></i> <b>Western Dresses</b> </li>
+                                <li><i className='bx bxs-check-circle'></i> Frock </li>
+                                <li><i className='bx bxs-check-circle'></i> Gown </li>
+                                <li><i className='bx bxs-check-circle'></i> One pice </li>
+                                <li><i className='bx bxs-check-circle'></i> Long dress </li>
                             </ul>
                             <button className="btn btn-primary">Get Started</button>
                         </div>
