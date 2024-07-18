@@ -24,19 +24,19 @@ export const Login = () => {
             initialValues: initialValues,
             validationSchema: loginschema,
         })
-        
+
     return (
-        <div className=" container  ">
-            {/* <img src ={background3} width={600} height={600} no-repeat/> */}
-          <div style={{backgroundImage:`url(${background3})`,
-          
-        }}> 
-          
-            <div className="container-fluid">
+        // <div className=" container  ">
+        //     <img src ={background3} width={600} height={600} no-repeat/>
+        //   <div style={{backgroundImage:`url(${background3})`,
+
+        // }}> 
+        <div className="container background">
+            <div className="container-fluid ">
                 {/* <div className="image"> */}
-              {/* </div> */}
+                {/* </div> */}
                 <div className='wrapper'>
-                    
+
                     {/* <img src="{ require('./images/background3.jpg")} */}
                     <form onSubmit={handleSubmit} action="">
                         <h1>Login</h1>
@@ -82,7 +82,8 @@ export const Login = () => {
                     </form>
                 </div>
             </div>
-         </div>
-          </div>
+        </div>
+        //   </div >
+        //   </div >
     )
 }

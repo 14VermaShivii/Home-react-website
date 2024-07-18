@@ -481,3 +481,13 @@ color: #fff;
 .form-error{
   color: red;
 }
+.background{
+  background-image: url(../public/images/background3.jpg) ;
+  /* width: 100%; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+    /* z-index: 2; */
+  
+}
